@@ -36,7 +36,7 @@ jobs:
     - name: Deploy to Nginx server via SSH
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_HOST: 127.0.0.1/pipeline
+        SSH_HOST: localhost/pipeline
         SSH_USERNAME: ayaz
         REMOTE_DIR: /home/ayaz/Desktop/react-cicd/build/index.html
       run: |
