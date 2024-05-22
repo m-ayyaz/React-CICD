@@ -38,7 +38,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         SSH_HOST: 127.0.0.1/pipeline
         SSH_USERNAME: ayaz
-        REMOTE_DIR: /home/ayaz/Desktop/react-cicd/build
+        REMOTE_DIR: /home/ayaz/Desktop/react-cicd/build/index.html
       run: |
         echo "${SSH_PRIVATE_KEY}" > private_key.pem
         chmod 600 private_key.pem
