@@ -45,4 +45,3 @@ jobs:
         scp -o StrictHostKeyChecking=no -i private_key.pem -r build/* ${SSH_USERNAME}@${SSH_HOST}:${REMOTE_DIR}
         ssh -o StrictHostKeyChecking=no -i private_key.pem ${SSH_USERNAME}@${SSH_HOST} << 'EOF'
           sudo systemctl restart nginx
-EOF
